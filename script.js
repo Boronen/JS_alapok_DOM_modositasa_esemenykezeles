@@ -57,12 +57,13 @@ function elemekElerese6(){
                 <img id="kep" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png">
             </div>
         `;
+        feladat7_checker();
     });
 }
 
-window.addEventListener("mousemove", feladat7_checker);
+//window.addEventListener("mousemove", feladat7_checker);
 
-let hoverBeallitva = false;
+//let hoverBeallitva = false;
 
 function feladat7_checker() {
 
@@ -70,25 +71,25 @@ function feladat7_checker() {
     //sidenote bug: Valamiért, ha megvan nyitva az dev console akkor CSAK kattintáskor működik, LIKE WTF??????
 
     //set-checker -- basic
-    if (hoverBeallitva) return;
+    //if (hoverBeallitva) return;
 
     const img = document.getElementById("kep");
 
-    if (!img) return;
+    //if (!img) return;
 
-    img.addEventListener("mouseenter", function(){
+    img.addEventListener("mouseover", function(){
         img.classList.add("kiemelt");
         img.classList.remove("kiemeltvissza");
     });
 
-    img.addEventListener("mouseleave", function(){
+    img.addEventListener("mouseout", function(){
         img.classList.remove("kiemelt");
         img.classList.add("kiemeltvissza");
     });
 
 
     //set-checker -- varied
-    hoverBeallitva = true;
+    //hoverBeallitva = true;
 }
 function feladat8(){
     //reminder: a getElementsByClassName egy listát add vissza , vagyis pontosabban *HTMLCollection-t* - nem tudom mi ez, de nekem ez marad lista , tömb 
