@@ -1,0 +1,1 @@
+reminder: még kell tisztítaní a kódot, mert valszeg ennél hatszor jobb megoldások vannak, és ez a komplett spagetti kód érzést adja.

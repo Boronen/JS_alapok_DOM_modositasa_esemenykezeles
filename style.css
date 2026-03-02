@@ -50,6 +50,47 @@ img {
     width: 100%;
 }
 
+.kiemelt {
+    width: 60%;
+}
+
+.kiemeltvissza {
+    width: 100%;
+}
+
+/*sajat feladat*/
+.sajatdivem {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    gap: 5px;
+}
+
+.cell {
+    width: 20%;
+    padding-top: 20%;
+    transition: transform 1s ease;
+}
+
+.cell:hover {
+    transform: scale(1.7);
+}
+
+.cell span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+code{
+    font-weight: bold;
+}
+/*sajat feladat*/
+
+
 div.tarolo {
     display: flex;
     justify-content: flex-start;
